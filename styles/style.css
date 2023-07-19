@@ -40,12 +40,14 @@ nav {
     padding: 2.8125rem 15rem;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid black;
 }
 
 .logo {
     display: flex;
     align-items: center;
     color: var(--logo-text-color);
+    border: 1px solid black;
 }
 
 .logo p {
@@ -62,6 +64,7 @@ nav {
 .nav-link2 {
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 
 .nav-link1>li,.nav-link2 li{
