@@ -21,6 +21,7 @@ body {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 ul {
@@ -80,13 +81,66 @@ nav {
     margin-left: 1.5625rem;
 }
 
-/* navbar end  */
+/* goat start  */
+.goat {
+    display: flex;
+    height: 74.5vh;
+}
+
+.goat-cl-1 {
+    background-image: url("/images/Group 14.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+}
+.goat-title{
+ color: #0B0223;
+font-size: 2.5rem;
+font-weight: 600;
+text-transform: uppercase;
+}
+.goat-logo{
+font-size: 5.3125rem;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 20px;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.goat-ul li{
+    margin: 20px;
+}
+
+.goat-cl-2 {
+    width: 50%;
+}
+.goat-cl-2 img {
+    width: 85%;
+}
+.btn{
+    border-radius: 48px;
+    padding: 21px 40px;
+    color: #ffffff;
+}
+.btn1{
+    background-color: var(--btn-1);
+}
+.btn2{
+    background-color: var(--btn-2);
+}
 
 /* responsive  start*/
 
 /* mobile responsive */
 @media only screen and (max-width: 576px) {
-
+/* header  */
     nav,
     .nav-link,
     .nav-link1 {
@@ -109,11 +163,13 @@ nav {
     .nav-link1>li {
         margin: 1.25rem 0px;
     }
+/* goat */
+
 }
 
 /* tab responsive */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    
+/* header */
     nav,
     .nav-link,
     .nav-link1 {
