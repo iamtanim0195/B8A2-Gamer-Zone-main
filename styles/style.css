@@ -35,19 +35,18 @@ ul a {
 
 }
 
+/* header style */
 nav {
     display: flex;
-    padding: 2.8125rem 15rem;
+    padding: 2.8125rem 0rem;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: space-around;
 }
 
 .logo {
     display: flex;
     align-items: center;
     color: var(--logo-text-color);
-    border: 1px solid black;
 }
 
 .logo p {
@@ -64,9 +63,18 @@ nav {
 .nav-link2 {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    font-weight: 500;
+    font-size: 1.125rem;
 }
 
-.nav-link1>li,.nav-link2 li{
-    padding-left: 30px;
+.nav-link1>li,
+.nav-link2 li {
+    padding-left: 1.5625rem;
+}
+
+.nav-link2 {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 0.625rem 1.875rem 0.625rem 0.5rem;
+    margin-left: 1.5625rem;
 }
