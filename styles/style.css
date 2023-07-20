@@ -84,7 +84,7 @@ nav {
 /* goat start  */
 .goat {
     display: flex;
-    height: 74.5vh;
+    height: 100%;
 }
 
 .goat-cl-1 {
@@ -134,9 +134,11 @@ nav {
     padding: 21px 40px;
     color: #ffffff;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
 }
+
 .btn1 {
     background-color: var(--btn-1);
 }
@@ -146,6 +148,10 @@ nav {
 }
 
 /* games card */
+.games{
+    margin: 2rem 0;
+    height: 100%;
+} 
 .game-head {
     text-align: center;
     margin: 1.5rem 0;
@@ -172,7 +178,7 @@ nav {
 }
 
 .card {
-    text-align: left;
+    text-align: justify;
 }
 
 .container {
@@ -272,8 +278,13 @@ nav {
         font-size: 4.5rem;
     }
 
-/* games card */
-
+    /* games card */
+    .game-cards {
+        flex-direction: column;
+    }
+    .card{
+        text-align: center;
+    }
 
 }
 
