@@ -273,9 +273,32 @@ nav {
     position: relative;
     left: 0;
 
-
 }
-
+/* game-type */
+.game-type{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    
+}
+.game-type img{
+    width: 25%;
+}
+.game-item{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    gap: 1.25rem;
+}
+.game-item:hover{
+    border: 1px solid var(--logo-color);
+    border-radius: 20px;
+}
 /* responsive  start*/
 
 /* mobile responsive */
@@ -386,4 +409,5 @@ nav {
         width: 50%;
         bottom: 4.5rem;
     }
+
 }
