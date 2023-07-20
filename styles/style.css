@@ -148,10 +148,11 @@ nav {
 }
 
 /* games card */
-.games{
+.games {
     margin: 2rem 0;
     height: 100%;
-} 
+}
+
 .game-head {
     text-align: center;
     margin: 1.5rem 0;
@@ -217,7 +218,7 @@ nav {
     color: white;
     font-size: 16px;
     padding: 20px 20px;
-    border-radius: 50% 50%;
+    border-radius: 50%;
 }
 
 .middle>span {
@@ -225,6 +226,54 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* banner start */
+.banner {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    text-align: right;
+    padding:0 10%;
+}
+
+.banner-cl-1 {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.banner-cl-1 h1 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner-cl-2 {
+    width: 50%;
+}
+
+.banner-cl-2 img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.badge {
+    width: 40%;
+    position: relative;
+    bottom: 6rem;
+
+}
+
+.badge img {
+    position: relative;
+    left: 0;
+
+
 }
 
 /* responsive  start*/
@@ -282,7 +331,8 @@ nav {
     .game-cards {
         flex-direction: column;
     }
-    .card{
+
+    .card {
         text-align: center;
     }
 
