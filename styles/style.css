@@ -134,13 +134,91 @@ nav {
     padding: 21px 40px;
     color: #ffffff;
 }
-
+.btn:hover{
+    cursor: pointer;
+}
 .btn1 {
     background-color: var(--btn-1);
 }
 
 .btn2 {
     background-color: var(--btn-2);
+}
+
+/* games card */
+.game-head {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.game-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.game-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.game-cards {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: left;
+}
+
+.container {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 90%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #aa040a;
+    color: white;
+    font-size: 16px;
+    padding: 20px 20px;
+    border-radius: 50% 50%;
+}
+
+.middle>span {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* responsive  start*/
@@ -173,22 +251,30 @@ nav {
     }
 
     /* goat */
-    .goat{
+    .goat {
         flex-direction: column;
         width: auto;
     }
-    .goat-cl-1,.goat-cl-2{
+
+    .goat-cl-1,
+    .goat-cl-2 {
         width: 90%;
         padding: 0;
         margin: 0 auto;
         align-items: center;
     }
-    .goat-title{
+
+    .goat-title {
         font-size: 2rem;
     }
-    .goat-logo{
+
+    .goat-logo {
         font-size: 4.5rem;
     }
+
+/* games card */
+
+
 }
 
 /* tab responsive */
