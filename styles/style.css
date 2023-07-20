@@ -5,6 +5,7 @@
     --btn-2: #4EC5F7;
     --nav-link-color: rgba(60, 53, 79, 1);
     --logo-text-color: rgba(11, 2, 35, 1);
+    --footer-bg-color: rgba(11, 2, 35, 1);
 
 }
 
@@ -47,6 +48,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--logo-text-color);
 }
 
@@ -235,7 +237,7 @@ nav {
     height: 100%;
     align-items: center;
     text-align: right;
-    padding:0 10%;
+    padding: 0 10%;
 }
 
 .banner-cl-1 {
@@ -274,8 +276,9 @@ nav {
     left: 0;
 
 }
+
 /* game-type */
-.game-type{
+.game-type {
     display: flex;
     width: 90%;
     height: 90%;
@@ -284,21 +287,73 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
-    
+
 }
-.game-type img{
+
+.game-type img {
     width: 25%;
 }
-.game-item{
+
+.game-item {
     display: flex;
     align-items: center;
     padding: 3px;
     gap: 1.25rem;
 }
-.game-item:hover{
+
+.game-item:hover {
     border: 1px solid var(--logo-color);
     border-radius: 20px;
 }
+
+/* footer */
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 5rem 0;
+}
+
+.footer-logo img {
+    width: 8%;
+}
+
+.footer-logo p {
+    color: #ffffff;
+}
+
+.footer-link ul,
+.footer-icon ul,
+.footer-policy ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.footer-link ul li a {
+    color: #ffffff;
+    padding-left: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-icon ul li i {
+    color: #ffffff;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.footer-policy ul li a {
+    color: rgba(255, 255, 255, 1);
+    padding-left: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+}
+
+
+
 /* responsive  start*/
 
 /* mobile responsive */
@@ -358,21 +413,57 @@ nav {
     .card {
         text-align: center;
     }
-/* banner */
-    .banner{
+
+    /* banner */
+    .banner {
         flex-direction: column;
         text-align: center;
     }
-    .banner-cl-1, .banner-cl-2{
+
+    .banner-cl-1,
+    .banner-cl-2 {
         width: 100%;
         padding: 1rem 0;
     }
-    .banner-cl-1 h1{
+
+    .banner-cl-1 h1 {
         padding-bottom: 1rem;
     }
-    .badge{
+    .game-type{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0;
+        font-size: 0.625rem;
+    }
+    .game-item{
+        gap: 5px;
+    }
+    .badge {
         width: 45%;
         bottom: 4rem;
+    }
+
+    /* footer */
+    .footer-logo img {
+        width: 25%;
+    }
+    .footer-link ul,
+    .footer-icon ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem;
+        font-size: 0.625rem;
+    }
+    .footer-policy ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+    .footer-policy ul li a{
+        font-size: 0.625rem;
+    }
+    .copyright{
+        font-size: 0.625rem;
     }
 
 }
@@ -405,9 +496,17 @@ nav {
     }
 
     /* banner */
-    .badge{
+    .badge {
         width: 50%;
         bottom: 4.5rem;
     }
-
+    .game-type{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0;
+    }
+    /* footer */
+    .footer-logo img {
+        width: 8%;
+    }
 }
