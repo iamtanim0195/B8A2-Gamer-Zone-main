@@ -97,42 +97,49 @@ nav {
     justify-content: center;
     padding-left: 6rem;
 }
-.goat-title{
- color: #0B0223;
-font-size: 2.5rem;
-font-weight: 600;
-text-transform: uppercase;
+
+.goat-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.goat-logo{
-font-size: 5.3125rem;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
-margin-bottom: 20px;
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+.goat-logo {
+    font-size: 5.3125rem;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-.goat-ul li{
+
+.goat-ul li {
     margin: 20px;
 }
 
 .goat-cl-2 {
     width: 50%;
 }
+
 .goat-cl-2 img {
     width: 85%;
 }
-.btn{
+
+.btn {
     border-radius: 48px;
     padding: 21px 40px;
     color: #ffffff;
 }
-.btn1{
+
+.btn1 {
     background-color: var(--btn-1);
 }
-.btn2{
+
+.btn2 {
     background-color: var(--btn-2);
 }
 
@@ -140,7 +147,8 @@ background-clip: text;
 
 /* mobile responsive */
 @media only screen and (max-width: 576px) {
-/* header  */
+
+    /* header  */
     nav,
     .nav-link,
     .nav-link1 {
@@ -163,13 +171,30 @@ background-clip: text;
     .nav-link1>li {
         margin: 1.25rem 0px;
     }
-/* goat */
 
+    /* goat */
+    .goat{
+        flex-direction: column;
+        width: auto;
+    }
+    .goat-cl-1,.goat-cl-2{
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .goat-title{
+        font-size: 2rem;
+    }
+    .goat-logo{
+        font-size: 4.5rem;
+    }
 }
 
 /* tab responsive */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-/* header */
+
+    /* header */
     nav,
     .nav-link,
     .nav-link1 {
