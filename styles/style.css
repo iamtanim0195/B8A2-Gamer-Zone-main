@@ -335,6 +335,22 @@ nav {
     .card {
         text-align: center;
     }
+/* banner */
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-cl-1, .banner-cl-2{
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .banner-cl-1 h1{
+        padding-bottom: 1rem;
+    }
+    .badge{
+        width: 45%;
+        bottom: 4rem;
+    }
 
 }
 
@@ -363,5 +379,11 @@ nav {
 
     .nav-link1>li {
         margin: 1.25rem 0px;
+    }
+
+    /* banner */
+    .badge{
+        width: 50%;
+        bottom: 4.5rem;
     }
 }
